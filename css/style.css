@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=EB+Garamond:wght@600&display=swap');
+body { color: #fff }
+.container { margin: auto; }
+header { background: url('../img/bgheader.jpg') center/cover; height: 100vh; }
+.header_left{
+   padding-bottom: 5%;
+   height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+}
+#menu { text-align: center; padding-top: 30px; }
+#menu li {margin-bottom: 10px }
+a { color: #fff }
+#menu li a { font: 600 1.1em 'Cormorant Garamond' }
+#inst, #logo { display: none }
+.fa-instagram { font-size: 1.5em }
+h1 {
+   font: 600 2em 'Garamond';
+   line-height: 120%;
+   max-width: 314px;
+}
+h2 { font: bold 2em 'Garamond'; padding: 150px 0  80px 0; }
+h5 { 
+   text-align: center; 
+   padding: 30px 0; 
+   font: bold 1.1em 'Cormorant Garamond';
+}
+h6 { margin-top: 25px }
+#scroll_down {
+   background-color:#00000000 ;
+   color: #fff;
+   border: 3px solid #00000000;
+   align-items: center;
+   font: bold 1.1em 'Cormorant Garamond';
+   padding: 5px 10px;
+}
+#scroll_down img { margin-right: 20px }
+main, footer { background-color: #111111 }
+#apastrofa { padding-top: 120px }
+#about {
+   padding-top: 60px;
+   font: bold 1.7em 'Cormorant Garamond';
+   line-height: 130%;
+   text-align: center;
+}
+.two { flex-direction: column; align-items: center; }
+.row { padding-top: 60px; padding-left: 15px }
+.row2 { padding: 60px 15px 0 15px  }
+.col { padding:30px 20px }
+.col img { width: 100%  }
+.block img { 
+   Width: 100%;
+   position: relative;
+   top: 20px;
+   right:20px;
+   transition: all .6s;
+   
+}
+.block { border: 1px solid #CDAA7D }
+.icons { flex-direction: column }
+.icons img { margin-bottom: 40px }
+.work li {font: 400 1.5em 'Cormorant Garamond' }
+.footer { 
+   text-align: center;
+   padding: 100px 35px 50px 35px ;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+}
+.footer_block * { margin-top: 20px }
+.footer span { display: block }
+#button { margin: 0 auto; }
+
+
+.flex { display: flex }
+.acenter { text-align: center; }
+.aself { align-self: center; }
+@media only screen and (min-width: 768px) {
+   .container { max-width: 1300px }
+   #menu { 
+      padding: 30px 15px 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   #menu li a:hover {
+      color: #CDAA7D;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+   }
+   #inst, #logo { display: inherit }
+   h1 { font-size: 4.5em ; max-width: 600px }
+   #scroll_down:hover { 
+      border: 3px solid #CDAA7D; 
+      border-radius: 10px; 
+      color: #CDAA7D;
+   }
+   #about {max-width: 620px }
+   .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   .col { width: 33.33%;}
+   .col:hover .block img{
+      position: relative;
+      top: 1.6px;
+      right:inherit;
+   }
+   .col:hover .block {
+      transition: ease-in-out .6s; 
+      background: rgba(205, 170, 125, 0.8);
+      border-top:  1px solid rgba(205, 170, 125, 0.8);
+      border-bottom: 1px solid rgba(205, 170, 125, 0.8);
+      border-left: 2px solid rgba(205, 170, 125, 0.8);
+      border-right: 2px solid rgba(205, 170, 125, 0.8);
+   }
+   .col:hover h6, #inst:hover   { color: #CDAA7D }
+   .icons {
+      flex-direction: initial;
+      margin-top: 120px; 
+      justify-content: space-around;
+      width: 100%;
+   }
+   .icons img { margin-bottom: inherit }
+   .work li:not(:last-child){ padding-right: 10vw }
+   .footer { display: flex; justify-content: space-between;}
+}
+
+
