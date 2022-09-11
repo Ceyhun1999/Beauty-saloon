@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=EB+Garamond:wght@600&display=swap');
+
+html { scroll-behavior: smooth; }
 body { color: #fff }
-.container { margin: auto; }
+.container { margin: auto }
+
+/* styling header elements and h1,h2.. etc - HEADER */
 header { background: url('../img/bgheader.jpg') center/cover; height: 100vh; }
 .header_left{
    padding-bottom: 5%;
@@ -15,6 +19,7 @@ a { color: #fff }
 #menu li a { font: 600 1.1em 'Cormorant Garamond' }
 #inst, #logo { display: none }
 .fa-instagram { font-size: 1.5em }
+
 h1 {
    font: 600 2em 'Garamond';
    line-height: 120%;
@@ -27,6 +32,7 @@ h5 {
    font: bold 1.1em 'Cormorant Garamond';
 }
 h6 { margin-top: 25px }
+
 #scroll_down {
    background-color:#00000000 ;
    color: #fff;
@@ -36,7 +42,10 @@ h6 { margin-top: 25px }
    padding: 5px 10px;
 }
 #scroll_down img { margin-right: 20px }
+
 main, footer { background-color: #111111 }
+
+/* styling main elements - MAIN */
 #apastrofa { padding-top: 120px }
 #about {
    padding-top: 60px;
@@ -45,22 +54,24 @@ main, footer { background-color: #111111 }
    text-align: center;
 }
 .two { flex-direction: column; align-items: center; }
+
 .row { padding-top: 60px; padding-left: 15px }
-.row2 { padding: 60px 15px 0 15px  }
+.row2 { padding: 60px 15px 0 15px }
 .col { padding:30px 20px }
-.col img { width: 100%  }
+.col img { width: 100% }
 .block img { 
    Width: 100%;
    position: relative;
    top: 20px;
    right:20px;
    transition: all .6s;
-   
 }
 .block { border: 1px solid #CDAA7D }
 .icons { flex-direction: column }
 .icons img { margin-bottom: 40px }
 .work li {font: 400 1.5em 'Cormorant Garamond' }
+
+/* styling footer elements - FOOTER */
 .footer { 
    text-align: center;
    padding: 100px 35px 50px 35px ;
@@ -69,14 +80,17 @@ main, footer { background-color: #111111 }
 }
 .footer_block * { margin-top: 20px }
 .footer span { display: block }
-#button { margin: 0 auto; }
-
+#button { margin: 0 auto }
 
 .flex { display: flex }
-.acenter { text-align: center; }
-.aself { align-self: center; }
+.acenter { text-align: center }
+.aself { align-self: center }
+
+
 @media only screen and (min-width: 768px) {
    .container { max-width: 1300px }
+
+   /* styling header elements and h1,h2.. etc - HEADER */
    #menu { 
       padding: 30px 15px 0 15px;
       display: flex;
@@ -95,6 +109,8 @@ main, footer { background-color: #111111 }
       border-radius: 10px; 
       color: #CDAA7D;
    }
+
+   /* styling main elements - MAIN */
    #about {max-width: 620px }
    .row {
       display: flex;
@@ -124,6 +140,8 @@ main, footer { background-color: #111111 }
    }
    .icons img { margin-bottom: inherit }
    .work li:not(:last-child){ padding-right: 10vw }
+
+   /* styling footer elements - FOOTER */
    .footer { display: flex; justify-content: space-between;}
 }
 
